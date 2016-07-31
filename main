@@ -93,7 +93,7 @@ def spell(name):
 
 /* "How many fingers am I holding up?"
 	player has x guesses - if it's correct, no damage taken
-	if it's wrong, x damage taken */
+	if it's wrong, x damage taken. */
 	
 			var howManyFingers = function() {
 				document.getElementById("checkGuess").onclick = function() {
@@ -104,6 +104,7 @@ def spell(name):
 						alert(guess + " is correct! Attack avoided!");
 					} else {
 						alert("nope, try again sucker");
+						// add > or < to tell player to guess higher or lower
 					}
 				}
 			}
